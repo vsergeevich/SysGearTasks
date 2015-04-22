@@ -26,7 +26,7 @@ public class Graf {
         Random r = new Random();
         Point p;
         for (int i = 0; i < 10; i++) {
-            p = new Point(r.nextInt(10), r.nextInt(10)); //generating a random point in range [10, 10]
+            p = new Point(r.nextInt(10), r.nextInt(10)); //generating a random point in range [0, 10]
             set.add(p); //add a point to the Set
         }
         for (Iterator<Point> iter = set.iterator(); iter.hasNext();) {

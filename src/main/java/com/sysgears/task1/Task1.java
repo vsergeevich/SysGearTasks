@@ -26,7 +26,7 @@ public class Task1 {
 
     public static void main(String[] args) throws Exception {
         Task1 task1 = new Task1();
-        int generatedArray[] = task1.generateRandomArray(20); //GeFnerating array, size = 20
+        int generatedArray[] = task1.generateRandomArray(20); //Generating array, size = 20
         task1.writeToYamlFile(generatedArray); //Saving to file
         YamlReader reader = new YamlReader(new FileReader("data.yml")); 
         Integer[] list = reader.read(Integer[].class); // Reading from file
@@ -35,9 +35,9 @@ public class Task1 {
     }
 
     /**
-     * Generate array of random numbers between 0 and 100. Every elements
+     * Generating array of random numbers between 0 and 100. Every elements
      * contains twice, except the last(unique - max element from array plus 1).
-     * Because the desired number of elements is an odd, check @param arraySize.
+     * Because the desired number of elements is an odd, @param arraySize is checked.
      * If it is even - increase the size of the array.
      *
      * @param arraySize
@@ -60,7 +60,7 @@ public class Task1 {
     }
 
     /**
-     * Searches an unique element using an operation bitwise XOR
+     * Searching an unique element using an operation bitwise XOR
      *
      * @param arrray
      * @return number without pair
@@ -73,7 +73,7 @@ public class Task1 {
         return rez;
     }
 /**
- * Save the array to a file in YAML-format
+ * Saveing the array to a file in YAML-format
  * @param array
  * @throws IOException 
  */

@@ -14,11 +14,11 @@ import java.util.Scanner;
  * 3)Split it into the left half and right half ({1,2}, {3, 4})
  * 4) Compare the last digit in the left half and the first digit in the
  * right half. If the right is greater than the left, increment the left and
- * stop. {1, 3}. If the right is less than the left, stop. c. If the right is
+ * stop. {1, 3}. If the right is less than the left, stop. If the right is
  * equal to the left, repeat step 4 with the second-last digit in the left and
  * the second digit in the right (and so on). Take the left half and append the
- * left half reversed. ThatZ's your next largest palindrome. (1331)
- * 5)If the number is already palindrome - increment increment the left part of 
+ * left half reversed. That is the next largest palindrome. (1331)
+ * 5)If the number is already palindrome - increment the left part of 
  * array(step 4)
  *
  * @author Tyrin Victor
@@ -50,7 +50,7 @@ public class Palindrom {
         for (int k = 0; k < length; k++) {
             arrayOfDigits[k] = inputNumber.charAt(k) - '0';
         }
-        if (checkAllDigitsEquals9(arrayOfDigits)) { //Check if all digits are 9
+        if (checkAllDigitsEquals9(arrayOfDigits)) { //Check if all digits equal 9
             return in + 2;
         }
 
@@ -102,7 +102,7 @@ public class Palindrom {
     }
   
     /**
-     * Check if the number consists of the digits "9".
+     * Checking if the number consists of the digits "9".
      *
      * @param in
      * @return
